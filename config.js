@@ -6,6 +6,7 @@ See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 
 The config.js file is used by:
+- drop_db.js
 - create_db.js
 - create_table.js
 - insert_db.js

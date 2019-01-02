@@ -1,6 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The create_db.js file creates the ttn_demo_db
+The create_db.js file creates the database ttn_demo_db.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 
@@ -25,15 +25,9 @@ const con = mysql.createConnection(config.databaseOptions);
 con.connect(function(err) {
     if (err) throw err;
 
-    con.query("DROP DATABASE ttn_demo_db", function (err, result) {
-        if (err) throw err;
-        console.log("Database ttn_demo_db deleted.");
-    });
-
     con.query("CREATE DATABASE ttn_demo_db", function (err, result) {
         if (err) throw err;
         console.log("Database ttn_demo_db created");
+        process.exit(1);
     });
-
-    process.exit(1);
 });

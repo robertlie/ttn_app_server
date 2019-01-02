@@ -1,6 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The insert_table.js file retrieves sensor data from The Things Network and stores the sensor data in the MySQL database.
+The store_records.js file retrieves sensor data from The Things Network and stores the sensor data in the MySQL database.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 
@@ -12,7 +12,7 @@ Install the following applications:
 
 Usage:
 1) Update file config.js
-2) Start the app: node insert_table.js
+2) Start the app: node store_records.js
 3) Check if the table sensor_data contains sensor data using the webbased tool phpMyAdmin:
    http://localhost/~username/phpmyadmin/index.php
 

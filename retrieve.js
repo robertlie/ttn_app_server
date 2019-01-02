@@ -62,17 +62,12 @@ ttn.data(appID, accessKey)
             console.log("Received uplink from ", devID);
             console.log(payload);
 
-            // payload.metadata.time: The timezone is zero UTC offset
-            //const dateTime = moment(payload.metadata.time).format('DD/MM/YYYY hh:mm:ss');
-            //const json = {"data": JSON.stringify(payload.payload_fields), "dateTime": dateTime};
-            console.log(payload);
-
             const gateways = payload.metadata.gateways;
             for (i=0; i<gateways.length; i++){
                 console.log(gateways[i]);
             }
 
-            console.log(Decoder(payload.payload_raw));
+            console.log("payload_raw decodded = ",Decoder(payload.payload_raw));
 
         })
     })

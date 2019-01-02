@@ -1,0 +1,24 @@
+{
+  "name": "ttn_app_server",
+  "version": "1.0.0",
+  "description": "Retrieve sensor data from The Things Network and store it in a database",
+  "main": "insert_table.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertlie/ttn_app_server.git"
+  },
+  "author": "Robert Lie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertlie/ttn_app_server/issues"
+  },
+  "homepage": "https://github.com/robertlie/ttn_app_server#readme",
+  "dependencies": {
+    "moment": "^2.23.0",
+    "mysql": "^2.16.0",
+    "ttn": "^2.3.1"
+  }
+}

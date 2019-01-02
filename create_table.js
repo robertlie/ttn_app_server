@@ -35,7 +35,6 @@ con.connect(function(err) {
     con.query("CREATE TABLE sensor_data (id int auto_increment primary key, hardware_serial VARCHAR(50), port TINYINT, counter BIGINT, payload_raw TINYBLOB, time VARCHAR(30), frequency FLOAT(6,3), modulation VARCHAR(255), data_rate VARCHAR(255), airtime INT, coding_rate VARCHAR(3), gateways TEXT)", function (err, result) {
         if (err) throw err;
         console.log("Table sensor_data created");
+        process.exit(1);
     });
-
-    process.exit(1);
 });

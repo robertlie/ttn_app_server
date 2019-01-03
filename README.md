@@ -6,7 +6,7 @@ A PHP script is included to retrieve sensor data from the database and display t
 ## Requirements
 
 The scripts in this repository uses the sensor data from LoRa/LoRaWAN tutorial 26: 
-[https://www.mobilefish.com/developer/lorawan/lorawan\_quickguide\_tutorial.html][1]
+[https://www.mobilefish.com/developer/lorawan/lorawan\_quickguide\_tutorial.html][1]<br>
 or watch this YouTube video:<br>
 [https://youtu.be/EMoZ9taGZRs][2]
 
@@ -19,7 +19,7 @@ To make all the scripts work in this repository the following applications need 
 - MySQL   
 - NodeJS   
 - NPM  
-- PHP  
+- PHP (in conjunction with a web server, for example Apache) 
  
 ## Features
 
@@ -34,7 +34,7 @@ If the binary value is 0x03 Yellow Led=On,  Green Led=On<br>
 - **create\_db.js**: Creates the database ttn\_demo\_db.  
 - **create\_table.js**: Creates the table sensor\_data.  
 - **drop\_db.js**: Deletes the database ttn\_demo\_db. <br>
-BE CAREFUL WITH THIS SCRIPT ONCE DELETED ALL DATA IS LOST.  
+BE CAREFUL WITH THIS SCRIPT, ONCE DELETED ALL DATA IS LOST.  
 - **read\_table.js**: Retrieves data from table sensor\_data and displays it in the terminal.  
 - **read\_table.php**: Retrieves data from table sensor\_data and displays it in the browser. 
 

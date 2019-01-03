@@ -33,10 +33,14 @@ If the binary value is 0x02 Yellow Led=Off, Green Led=On<br>
 If the binary value is 0x03 Yellow Led=On,  Green Led=On<br>
 - **create\_db.js**: Creates the database ttn\_demo\_db.  
 - **create\_table.js**: Creates the table sensor\_data.  
+![alt text](https://www.mobilefish.com/images/developer/lorawan_tutorial27_create_table_sensor_data.png "Create table sensor_data")
+- **store\_records.js**: Retrieves sensor data from The Things Network and stores the sensor data in the MySQL database.  
+![alt text](https://www.mobilefish.com/images/developer/lorawan_tutorial27_store_records_table_sensor_data.png "Store records in table sensor_data") 
 - **drop\_db.js**: Deletes the database ttn\_demo\_db. <br>
 BE CAREFUL WITH THIS SCRIPT, ONCE DELETED ALL DATA IS LOST.  
 - **read\_table.js**: Retrieves data from table sensor\_data and displays it in the terminal.  
-- **read\_table.php**: Retrieves data from table sensor\_data and displays it in the browser. 
+- **read\_table.php**: Retrieves data from table sensor\_data and displays it in the browser.  
+![alt text](https://www.mobilefish.com/images/developer/lorawan_tutorial27_read_table_sensor_data.png "Read table sensor_data") 
 
 
 ## Installation

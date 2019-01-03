@@ -1,6 +1,7 @@
 /*
 Author: Robert Lie (mobilefish.com)
 The drop_db.js file deletes the database ttn_demo_db.
+BE CAREFUL ONCE DELETED ALL DATA IS LOST.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 

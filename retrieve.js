@@ -1,6 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The retrieve.js file retrieves sensor data from The Things Network.
+The retrieve.js file retrieves sensor data from The Things Network and displays it in the terminal.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 

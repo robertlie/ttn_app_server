@@ -1,7 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The read_table.js file retrieves data from table sensor_data
-and displays it in the terminal.
+The read_table.js file retrieves data from table sensor_data and displays it in the terminal.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 

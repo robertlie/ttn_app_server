@@ -1,6 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The send.js file sends binary data to your end node.
+The send.js file creates a downlink and sends binary data from your computer to your LoRa end node.
 If the binary value is 0x00 Yellow Led=Off, Green Led=Off
 If the binary value is 0x01 Yellow Led=On,  Green Led=Off
 If the binary value is 0x02 Yellow Led=Off, Green Led=On

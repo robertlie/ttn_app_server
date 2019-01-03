@@ -1,7 +1,6 @@
 /*
 Author: Robert Lie (mobilefish.com)
-The config.js file contains the MySQL user credentials and the
-The Things Network (TTN) appID and accessKey.
+The config.js file contains the MySQL user credentials and The Things Network (TTN) appID and accessKey.
 See LoRa/LoRaWAN Tutorial 27
 https://www.mobilefish.com/download/lora/lora_part27.pdf
 

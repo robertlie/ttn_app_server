@@ -8,7 +8,7 @@ The config.js file is used by:
 - drop_db.js
 - create_db.js
 - create_table.js
-- insert_db.js
+- store_records.js
 - read_table.js
 - retrieve.js
 - send.js

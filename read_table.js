@@ -30,7 +30,7 @@ const config = require('./config.js');
 config.databaseOptions.database = "ttn_demo_db";
 const con = mysql.createConnection(config.databaseOptions);
 
-function decoder(bytes) {
+function decoder(bytes, port) {
     if(bytes.length == 1) {
         if(bytes[0] == 1) {
             return {

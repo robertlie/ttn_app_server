@@ -55,6 +55,30 @@ function decoder(bytes, port) {
     }
 }
 
+/*
+// Decoder function for The Things Node:
+// https://www.thethingsnetwork.org/docs/devices/node/
+// This function was used in Tutorial 28 for the range tests.
+
+function decoder(bytes, port) {
+	var decoded = {};
+	var events = {
+	  1: 'setup',
+	  2: 'interval',
+	  3: 'motion',
+	  4: 'button'
+	};
+	decoded.event = events[port];
+	decoded.battery = (bytes[0] << 8) + bytes[1];
+	decoded.light = (bytes[2] << 8) + bytes[3];
+	if (bytes[4] & 0x80)
+	  decoded.temperature = ((0xffff << 16) + (bytes[4] << 8) + bytes[5]) / 100;
+	else
+	  decoded.temperature = ((bytes[4] << 8) + bytes[5]) / 100;
+	return decoded;
+}
+*/
+
 con.connect(function(err) {
     if (err) throw err;
     const sql = "SELECT * FROM sensor_data";
@@ -71,7 +95,7 @@ con.connect(function(err) {
             console.log("payload_raw=",row.payload_raw);
 
             // Convert the payload_raw value using the decoder function
-            const payload_fields = decoder(row.payload_raw);
+			const payload_fields = decoder(row.payload_raw, row.port);
             console.log("payload_fields=",payload_fields);
 
             console.log("time (UTC)=",row.time);

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/robertlie/ttn_app_server#readme",
   "dependencies": {
-    "moment": "^2.23.0",
+    "moment": "^2.29.4",
     "mysql": "^2.16.0",
     "ttn": "^2.3.3"
   }
